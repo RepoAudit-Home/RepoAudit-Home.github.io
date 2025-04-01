@@ -1,0 +1,532 @@
+[
+    {
+        "repo_name": "memcached",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/memcached/memcached/pull/1216",
+        "date": "2025-3-18",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "memcached",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/memcached/memcached/pull/1217",
+        "date": "2025-3-18",
+        "status": "Confirmed",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "memcached",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/memcached/memcached/pull/1214",
+        "date": "2025-3-18",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "memcached",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/memcached/memcached/pull/1215",
+        "date": "2025-3-18",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "5",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "memcached",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/memcached/memcached/issues/1213",
+        "date": "2025-3-18",
+        "status": "Confirmed",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "nginx",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/nginx/nginx/issues/579",
+        "date": "2025-3-17",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "nginx",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/nginx/nginx/issues/580",
+        "date": "2025-3-17",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "3",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "challenge-004-nginx-source",
+        "language": "C",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/aixcc-public/challenge-004-nginx-source/pull/2",
+        "status": "Pending",
+        "Bug Num": "1",
+        "date": "2025-3-8",
+        "sort_weight": 100
+    },
+    {
+        "repo_name": "challenge-004-nginx-source",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/aixcc-public/challenge-004-nginx-source/pull/2",
+        "date": "2025-3-8",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 100
+    },
+    {
+        "repo_name": "challenge-004-nginx-source",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/aixcc-public/challenge-004-nginx-source/pull/1",
+        "date": "2025-3-8",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 100
+    },
+    {
+        "repo_name": "challenge-004-nginx-source",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/aixcc-public/challenge-004-nginx-source/pull/3",
+        "date": "2025-3-8",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 100
+    },
+    {
+        "repo_name": "challenge-004-nginx-source",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/aixcc-public/challenge-004-nginx-source/pull/3",
+        "date": "2025-3-8",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 100
+    },
+    {
+        "repo_name": "challenge-004-nginx-source",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/aixcc-public/challenge-004-nginx-source/pull/3",
+        "date": "2025-3-8",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 100
+    },
+    {
+        "repo_name": "challenge-004-nginx-source",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/aixcc-public/challenge-004-nginx-source/pull/3",
+        "date": "2025-3-8",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 100
+    },
+    {
+        "repo_name": "tally",
+        "bug_type": "Buffer Overflow",
+        "patch/issue link": "https://github.com/uber-go/tally/pull/265",
+        "date": "2025-3-9",
+        "status": "Pending",
+        "language": "Go",
+        "Bug Num": "21",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "sofa-pbrpc",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/baidu/sofa-pbrpc/pull/248",
+        "date": "2025-3-9",
+        "status": "Pending",
+        "language": "C++",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "sofa-pbrpc",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/baidu/sofa-pbrpc/pull/249",
+        "date": "2025-3-9",
+        "status": "Pending",
+        "language": "C++",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "sofa-pbrpc",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/baidu/sofa-pbrpc/pull/250",
+        "date": "2025-3-9",
+        "status": "Pending",
+        "language": "C++",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "libuv",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/libuv/libuv/pull/4720",
+        "date": "2025-3-9",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "clickhouse-odbc",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/ClickHouse/clickhouse-odbc/pull/473",
+        "date": "2025-3-3",
+        "status": "Fixed",
+        "language": "C++",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "htop",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/htop-dev/htop/commit/25a9227a212ae7356838a759ff193dc13ceacfce",
+        "date": "2025-2-27",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "dynamips",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/GNS3/dynamips/issues/290",
+        "date": "2025-2-27",
+        "status": "Pending",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "dynamips",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/GNS3/dynamips/issues/288",
+        "date": "2025-2-27",
+        "status": "Confirmed",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "memcached",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/memcached/memcached/pull/1209",
+        "date": "2025-2-26",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "54",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "memcached",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/memcached/memcached/pull/1208",
+        "date": "2025-2-26",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "TrinityEmulator",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/TrinityEmulator/TrinityEmulator/pull/23",
+        "date": "2025-2-26",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "h3",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/uber/h3/pull/976",
+        "date": "2025-2-26",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "libuv",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/libuv/libuv/issues/4723",
+        "date": "2025-2-26",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "dynamips",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/GNS3/dynamips/pull/286",
+        "date": "2025-2-26",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "dynamips",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/GNS3/dynamips/pull/287",
+        "date": "2025-2-26",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "5",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "dynamips",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/GNS3/dynamips/pull/289",
+        "date": "2025-2-26",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "11",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "libuv",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/libuv/libuv/issues/4725",
+        "date": "2025-2-25",
+        "status": "Confirmed",
+        "language": "C",
+        "Bug Num": "84",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "openldap",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "10309 \u2013 Handle potential null pointers returned by ber_strdup",
+        "date": "2025-2-20",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "8",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "frr",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/FRRouting/frr/issues/18071",
+        "date": "2025-2-17",
+        "status": "Confirmed",
+        "language": "C",
+        "Bug Num": "4",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "rtl_433",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/merbanan/rtl_433/pull/3202",
+        "date": "2025-2-16",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "TrinityEmulator",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/TrinityEmulator/TrinityEmulator/pull/21",
+        "date": "2025-2-16",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "TrinityEmulator",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/TrinityEmulator/TrinityEmulator/pull/22",
+        "date": "2025-2-16",
+        "status": "Fixed",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "Linux",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/ML/C_net_4cd8371.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "mecached",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/ML/C_memcached.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "Linux",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/ML/C_sound_1c4f29e.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "libsass",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/ML/C++_libsass.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C++",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "Linux",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/ML/C_mm_73b73ba.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "MagickCore",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/NPD/C_MagickCore.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "9",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "libfreenect",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/NPD/C_libfreenect.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "openldap",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/NPD/C_openldap.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "coturn",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/NPD/C_coturn_server.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "2",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "sofa-pbrpc",
+        "bug_type": "Null Pointer Dereference",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/NPD/C++_sofa-pbrpc.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C++",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "redis",
+        "bug_type": "Use After Free",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/UAF/C_redis.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "icu",
+        "bug_type": "Use After Free",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/UAF/C++_i18n.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C++",
+        "Bug Num": "3",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "shadowsocks-libev",
+        "bug_type": "Use After Free",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/UAF/C_shadowsocks-libev.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "Linux",
+        "bug_type": "Use After Free",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/UAF/C_peci_e79b548.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C++",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "wabt",
+        "bug_type": "Use After Free",
+        "patch/issue link": "https://github.com/PurCL/RepoAudit/blob/main/UAF/C++_wabt_tools.md",
+        "date": "2025-1-30",
+        "status": "Reproduced",
+        "language": "C++",
+        "Bug Num": "1",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "libsass",
+        "bug_type": "Memory Leak",
+        "patch/issue link": "https://github.com/sass/libsass/pull/3192",
+        "date": "2024-12-16",
+        "status": "Pending",
+        "language": "C++",
+        "Bug Num": "1",
+        "sort_weight": 0
+    }
+]
