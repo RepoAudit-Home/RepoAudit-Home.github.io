@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="RepoAudit is an open-source tool for repository quality assessment and bug management.">
+  <meta name="keywords" content="RepoAudit, Repository Audit, Bug Report, Code Quality, Open Source">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RepoAudit</title>
+  <!-- Optional Google Analytics -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    /* Optional: reduce some whitespace for a more compact layout */
+    .hero .hero-body { padding: 2rem 1rem !important; }
+    .section { padding: 1.5rem 1rem !important; }
+    .container { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+    .box { padding: 1rem !important; margin-bottom: 1rem !important; }
+    /* Responsive adjustments */
+    @media screen and (max-width: 1023px) {
+      .navbar-menu { display: none; }
+      .navbar-menu.is-active { display: block; }
+      .container { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar with additional links -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+      <a class="navbar-item" href="bugreports.html">Bug Reports</a>
+      <a class="navbar-item" href="documentation.html">Docs</a>
+      <a class="navbar-item" href="support.html">Support</a>
+      <a class="navbar-item" href="resources.html">Resources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Add this script block at the end of the document (before </body>) -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navbarBurgers = document.querySelectorAll('.navbar-burger');
+  navbarBurgers.forEach(el => {
+    el.addEventListener('click', () => {
+      const targetId = el.dataset.target;
+      const target = document.getElementById(targetId);
+      el.classList.toggle('is-active');
+      target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1">Docs</h1>
+          <div class="is-size-5" style="margin-top: 1rem;">
+            Check out the following docs to get started with RepoAudit.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Documentation Section -->
+<section class="section" id="documentation">
+  <div class="container is-max-desktop">
+    <!-- Quick Start -->
+    <div class="box">
+      <h4 class="title is-4">Quick Start (TBD)</h4>
+    </div>
+    
+    <!-- Add New Bug Detectors -->
+    <div class="box">
+      <h4 class="title is-4">Add New Bug Detectors (TBD)</h4>
+    </div>
+    
+    <!-- Support New Programming Languages -->
+    <div class="box">
+      <h4 class="title is-4">Support New Programming Languages (TBD)</h4>
+    </div>
+    
+    <!-- Add Multi-Modal Extension -->
+    <div class="box">
+      <h4 class="title is-4">Add Multi-Modal Extension (TBD)</h4>
+    </div>
+    
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      Template adapted from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfiese</a> by Keunhong Park et al.
+    </div>
+  </div>
+</footer>
+
+<!-- Navbar burger toggle script for mobile devices -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.getElementById(burger.dataset.target || "navMenu");
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
+</script>
+</body>
+</html>
