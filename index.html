@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="RepoAudit is an open-source tool for repository quality assessment and bug management.">
+  <meta name="keywords" content="RepoAudit, Repository Audit, Bug Report, Code Quality, Open Source">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RepoAudit</title>
+  <!-- Optional Google Analytics -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    /* Responsive adjustments for compact layout */
+    .hero .hero-body { padding: 2rem 1rem !important; }
+    .section { padding: 1.5rem 1rem !important; }
+    .container { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+    .box { padding: 1rem !important; margin-bottom: 1rem !important; }
+    .loading { text-align: center; font-size: 1.2em; margin-top: 20px; color: #555; }
+    /* Navbar burger adjustments for mobile */
+    @media screen and (max-width: 1023px) {
+      .navbar-menu { display: none; }
+      .navbar-menu.is-active { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar with additional links -->
+<!-- Navbar with additional links -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+      <a class="navbar-item" href="bugreports.html">Bug Reports</a>
+      <a class="navbar-item" href="documentation.html">Docs</a>
+      <a class="navbar-item" href="support.html">Support</a>
+      <a class="navbar-item" href="resources.html">Resources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Add this script block at the end of the document (before </body>) -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navbarBurgers = document.querySelectorAll('.navbar-burger');
+  navbarBurgers.forEach(el => {
+    el.addEventListener('click', () => {
+      const targetId = el.dataset.target;
+      const target = document.getElementById(targetId);
+      el.classList.toggle('is-active');
+      target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+<!-- Hero Section: Introduction -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1">RepoAudit: Auditing Code As Human</h1>
+          <div class="is-size-5" style="margin-top: 1rem;">
+            An autonomous LLM-agent designed for large-scale, repository-level code auditing.
+          </div>
+          <div class="buttons is-centered" style="margin-top: 1.5rem;">
+            <a href="https://arxiv.org/abs/2501.18160" class="button is-normal is-rounded is-dark" target="_blank">
+              <span class="icon"><i class="ai ai-arxiv"></i></span>
+              <span>Paper</span>
+            </a>
+            <a href="https://github.com/PurCL/RepoAudit" class="button is-normal is-rounded is-dark" target="_blank">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>Code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="box">
+      <p><span style="font-size: 2em;">😵‍💫</span> Are you still troubled by code security issues?</p>
+      <p><span style="font-size: 2em;">😵‍💫</span> Have you ever complained that program testing misses countless bugs?</p>
+      <p><span style="font-size: 2em;">😵‍💫</span> Have you found static code analysis tools too cumbersome to use, especially when they only support a limited set of bug types and languages like C/C++?</p>
+      <p><span style="font-size: 2em;">🍺</span> If you face these challenges, RepoAudit is your ultimate lifesaver!</p>
+      <p>
+        <span style="font-size: 2.5em;">🎯</span> Our mission is to enable automated code auditing with minimal human intervention. As a multi-agent framework blending the core principles of traditional static analysis with advanced large language models, RepoAudit reinvents code auditing by delivering:
+      </p>
+      <div class="content">
+        <ul>
+          <li><strong>Build-Free:</strong> No need to compile your programs—detect potential bugs during development, even in incomplete code generated by AI tools like Copilot.</li>
+          <li><strong>Easy-to-Customize:</strong> Forget about dealing with compiler internals like LLVM IR. Simply write custom prompts. Few-shot chain-of-thought (CoT) prompting is all you need.</li>
+          <li><strong>Multi-Lingual Support:</strong> Analyze code in multiple languages with ease. RepoAudit currently supports C/C++, Java, and Go, with additional language support on the horizon.</li>
+        </ul>
+        <p>
+          For a brand-new code auditing experience, check out the following demo videos and have a quick start.
+        </p>
+      </div>
+    </div>
+    
+    <div class="columns" style="margin-top: 1rem;">
+      <div class="column">
+        <video controls muted loop poster="./static/videos/intro_preview.jpg" style="width: 100%; border: 3px solid black; border-radius: 8px;">
+          <source src="./static/videos/Intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column">
+        <video controls muted loop style="width: 100%; border: 3px solid black; border-radius: 8px;">
+          <source src="./static/videos/demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- News Section -->
+<section class="section" id="news">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Latest News</h2>
+    <div class="box">
+      <ul style="list-style: none; padding-left: 0;">
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(07/2025):</strong>
+          We released the <a href="https://arxiv.org/abs/2507.15671" target="_blank">preprint</a> of <strong>bugscope</strong>, an agent that learns to detect diverse bugs from examples. It beats <a href="https://docs.cursor.com/bugbot" target="_blank">Cursor BugBot</a> and <a href="https://www.coderabbit.ai/" target="_blank">CodeRabbit</a>, detecting 2× more bugs with high precision. Check out the <a href="https://arxiv.org/abs/2507.15671" target="_blank">preprint</a> for more details!
+        </li>
+
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(07/2025):</strong>
+          RepoAudit now supports auditing Ada code.
+        </li>
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(06/2025):</strong>
+          The <a href="https://arxiv.org/abs/2506.00714" target="_blank">preprint</a> of "An LLM Agent for Functional Bug Detection in Network Protocols" has been released, providing the technical details of <strong>rfcscan</strong>!
+        </li>
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(05/2025):</strong>
+          RepoAudit was accepted to <a href="https://icml.cc/virtual/2025/poster/45170" target="_blank">ICML'25</a>.
+        </li>
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(04/2025):</strong>
+          RepoAudit now can detect functional bugs in network protocol implementations, supporting <strong>rfcscan</strong>.
+        </li>
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(04/2025):</strong>
+          We open-sourced the agent <strong>dfbscan</strong>, a data-flow bug detector in RepoAudit (<a href="https://github.com/PurCL/RepoAudit">Link</a>). Stay tuned as we will open-source other agents (such as <strong>bugscope</strong>, <strong>llmsa</strong>, <strong>rfcscan</strong>, <strong>patinf</strong>, and <strong>propscan</strong>) in RepoAudit very soon.
+        </li>
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(03/2025):</strong>
+          We were invited to DARPA's Resilient Software Systems Demo Day. Here is the <a href="https://www.youtube.com/watch?v=XTtDh1EPx-g&list=PL6wMum5UsYvZhEOoP4YtAwtZdLSBIAltk&index=7" target="_blank">demo video</a>.
+        </li>
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(03/2025):</strong>
+          RepoAudit detected a memory leak in Uber's geospatial indexing system <a href="https://github.com/uber/h3" target="_blank">h3</a>. The <a href="https://github.com/uber/h3/pull/976" target="_blank">bug</a> has been confirmed and the patch has been merged by the developers.
+        </li>
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(02/2025):</strong>
+          We published the preprint of RepoAudit on arXiv. Here is the <a href="https://arxiv.org/abs/2501.18160" target="_blank">link</a> to the paper.
+        </li>
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(01/2025):</strong>
+          We were invited to deliver a talk to the CodeQL team @ GitHub. Here is the <a href="https://www.youtube.com/watch?v=nOS56VC0FTQ" target="_blank">recording</a> of the talk.
+        </li>
+        <li style="margin-bottom: 0.5rem;">
+          <span style="color: #f39c12; font-weight: bold; margin-right: 0.5rem;">🎉</span>
+          <strong>(09/2024):</strong>
+          Two papers on AI code auditing were accepted by <a href="https://aclanthology.org/2024.findings-emnlp.217/" target="_blank">Findings of EMNLP'24</a> and <a href="https://neurips.cc/virtual/2024/poster/95227" target="_blank">NeurIPS'24</a>.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Bug Report List Section: Top 10 -->
+<section class="section" id="bug-reports">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Bug Report List (Top 10)</h2>
+    <div id="loading-message" class="loading">Loading bug reports...</div>
+    <table class="table is-striped is-hoverable is-fullwidth">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Project</th>
+          <th>Lang</th>
+          <th>Bug Type</th>
+          <th>Link</th>
+          <th>Status</th>
+          <th>Num</th>
+          <th>Agent</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="bug-report-table">
+        <!-- Dynamic rows will be inserted here -->
+      </tbody>
+    </table>
+    <div class="has-text-centered" style="margin-top: 1rem;">
+      <a href="bugreports.html" class="button is-link is-rounded">View More Bug Reports</a>
+    </div>
+  </div>
+</section>
+
+<!-- How to Start Section -->
+<section class="section" id="how-to-start">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">How to Start and Contribute</h2>
+    <div class="box">
+      <div class="content">
+        <ul>
+          <li>
+            <strong>For General Users:</strong> Get started by checking out our repository’s 
+            <a href="https://github.com/PurCL/RepoAudit" target="_blank">README</a>. It provides step-by-step guides and usage examples. It also offers detailed instructions on how to integrate RepoAudit into your projects. Our 
+            <a href="support.html" target="_blank">support page</a> gives further guidance on troubleshooting and common concerns.
+          </li>
+          <li>
+            <strong>For Domain Experts:</strong> Check out our 
+            <a href="documentation.html" target="_blank">documentation</a> for detailed information. Learn how to extend RepoAudit for additional bug types and programming languages. You can even integrate your own knowledge base for multi-modal analysis.
+          </li>
+          <li>
+            <strong>For Researchers:</strong> Visit our 
+            <a href="resources.html" target="_blank">Resource page</a> to explore more resources. We continuously post our projects on LLM-driven code auditing and update the list of research papers published in relevant venues.
+          </li>
+        </ul>
+        <p>
+          If you find any bugs in open-source projects using RepoAudit and get them confirmed, please submit an issue on our 
+          <a href="bugreports.html" target="_blank">bug list</a>. We will acknowledge your contribution by listing the bugs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      Template adapted from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfiese</a> by Keunhong Park et al.
+    </div>
+  </div>
+</footer>
+
+<!-- Navbar burger toggle script for mobile devices -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.getElementById(burger.dataset.target || "navMenu");
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
+
+  async function loadBugReports() {
+    try {
+      const response = await fetch("static/bug/BugReport.json");
+      const bugReports = await response.json();
+
+      // Sort bugReports by descending sort_weight and then descending date
+      bugReports.sort((a, b) => {
+        if (b.sort_weight !== a.sort_weight) {
+          return b.sort_weight - a.sort_weight;
+        }
+        return new Date(b.date) - new Date(a.date);
+      });
+
+      const tableBody = document.getElementById("bug-report-table");
+      const loadingMessage = document.getElementById("loading-message");
+      
+      // Remove loading message
+      loadingMessage.style.display = "none";
+      
+      // Populate table rows with bug reports
+      bugReports.slice(0, 10).forEach((bug, index) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${index + 1}</td>
+          <td>${bug.repo_name}</td>
+          <td>${bug.language}</td>
+          <td>${bug.bug_type}</td>
+          <td><a href="${bug["patch/issue link"]}" target="_blank">View</a></td>
+          <td>${bug.status}</td>
+          <td>${bug["Bug Num"]}</td>
+          <td>${bug["Agent"]}</td>
+          <td>${bug.date}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    } catch (error) {
+      console.error("Error loading bug reports:", error);
+      document.getElementById("loading-message").textContent = "Failed to load bug reports.";
+    }
+  }
+    
+  document.addEventListener("DOMContentLoaded", loadBugReports);
+</script>
+</body>
+</html>
