@@ -431,7 +431,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1967",
-        "status": "Pending",
+        "status": "Confirmed",
         "date": "2025-5-29",
         "language": "C",
         "Bug Num": "1",
@@ -453,7 +453,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1963",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-28",
         "language": "C",
         "Bug Num": "1",
@@ -464,7 +464,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1962",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-17",
         "language": "C",
         "Bug Num": "1",
@@ -475,7 +475,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1961",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-17",
         "language": "C",
         "Bug Num": "1",
@@ -486,7 +486,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1960",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-17",
         "language": "C",
         "Bug Num": "1",
@@ -497,7 +497,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1959",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-17",
         "language": "C",
         "Bug Num": "1",
@@ -508,7 +508,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1958",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-17",
         "language": "C",
         "Bug Num": "1",
@@ -519,7 +519,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1957",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-17",
         "language": "C",
         "Bug Num": "1",
@@ -530,7 +530,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1956",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-13",
         "language": "C",
         "Bug Num": "1",
@@ -541,7 +541,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1955",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-13",
         "language": "C",
         "Bug Num": "1",
@@ -552,7 +552,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1954",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-13",
         "language": "C",
         "Bug Num": "1",
@@ -563,7 +563,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1953",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-13",
         "language": "C",
         "Bug Num": "1",
@@ -574,7 +574,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1952",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-13",
         "language": "C",
         "Bug Num": "1",
@@ -585,7 +585,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1951",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-5-14",
         "language": "C",
         "Bug Num": "1",
@@ -2345,7 +2345,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1986",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-7-12",
         "language": "C",
         "Bug Num": 1,
@@ -2356,7 +2356,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1985",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-7-11",
         "language": "C",
         "Bug Num": 2,
@@ -2367,7 +2367,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1984",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-7-11",
         "language": "C",
         "Bug Num": 1,
@@ -2378,7 +2378,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1983",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-7-11",
         "language": "C",
         "Bug Num": 1,
@@ -2389,7 +2389,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1982",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-7-11",
         "language": "C",
         "Bug Num": 2,
@@ -2400,7 +2400,7 @@
     {
         "repo_name": "GnuTLS",
         "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1981",
-        "status": "Pending",
+        "status": "Fixed",
         "date": "2025-7-11",
         "language": "C",
         "Bug Num": 3,
@@ -2409,9 +2409,97 @@
         "sort_weight": 0
     },
     {
+        "repo_name": "GnuTLS",
+        "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/2003",
+        "status": "Fixed",
+        "date": "2025-8-2",
+        "language": "C",
+        "Bug Num": 2,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "GnuTLS",
+        "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/2002",
+        "status": "Fixed",
+        "date": "2025-8-4",
+        "language": "C",
+        "Bug Num": 2,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "GnuTLS",
+        "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/2001",
+        "status": "Fixed",
+        "date": "2025-8-4",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "GnuTLS",
+        "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/2000",
+        "status": "Fixed",
+        "date": "2025-8-2",
+        "language": "C",
+        "Bug Num": 2,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "GnuTLS",
+        "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1999",
+        "status": "Fixed",
+        "date": "2025-8-2",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "GnuTLS",
+        "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/1998",
+        "status": "Fixed",
+        "date": "2025-8-2",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "GnuTLS",
+        "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/2007",
+        "status": "Confirmed",
+        "date": "2025-8-5",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Memory Leak",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "GnuTLS",
+        "patch/issue link": "https://gitlab.com/gnutls/gnutls/-/merge_requests/2006",
+        "status": "Confirmed",
+        "date": "2025-8-5",
+        "language": "C",
+        "Bug Num": 6,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
         "repo_name": "Msquic",
         "patch/issue link": "https://github.com/microsoft/msquic/commit/56ed5174dfc50b62b78899202331937b7b3c1a5a",
-        "status": "Pending",
+        "status": "Confirmed",
         "date": "2025-7-11",
         "language": "C",
         "Bug Num": 1,
@@ -2422,7 +2510,7 @@
     {
         "repo_name": "Msquic",
         "patch/issue link": "https://github.com/microsoft/msquic/commit/cd5a0f49c9b6fc0a7d7364090874fee802de8d38",
-        "status": "Pending",
+        "status": "Confirmed",
         "date": "2025-7-11",
         "language": "C",
         "Bug Num": 5,
@@ -2433,7 +2521,7 @@
     {
         "repo_name": "Msquic",
         "patch/issue link": "https://github.com/microsoft/msquic/commit/93d94dc5d00a1540756e29507afd29d1bcf71320",
-        "status": "Pending",
+        "status": "Confirmed",
         "date": "2025-7-11",
         "language": "C",
         "Bug Num": 1,
@@ -2444,7 +2532,7 @@
     {
         "repo_name": "Msquic",
         "patch/issue link": "https://github.com/microsoft/msquic/commit/c5f84bfa35ff2895b7218ec289aeb4b3f24f1ec0",
-        "status": "Pending",
+        "status": "Confirmed",
         "date": "2025-7-11",
         "language": "C",
         "Bug Num": 1,
@@ -2466,7 +2554,7 @@
     {
         "repo_name": "FFmpeg",
         "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250715003109.7028-1-jiashengjiangcool@gmail.com/",
-        "status": "Confirmed",
+        "status": "Fixed",
         "date": "2025-7-15",
         "language": "C",
         "Bug Num": 1,
@@ -2494,6 +2582,149 @@
         "Bug Num": 3,
         "Agent": "patinf",
         "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250803233127.4888-1-jiashengjiangcool@gmail.com/",
+        "status": "Confirmed",
+        "date": "2025-8-3",
+        "language": "C",
+        "Bug Num": 2,
+        "Agent": "patinf",
+        "bug_type": "Memory Leak",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://github.com/FFmpeg/FFmpeg/commit/55d234b4330d1588eb127cf2283a442ee341f2c2",
+        "status": "Fixed",
+        "date": "2025-8-3",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://github.com/FFmpeg/FFmpeg/commit/ab040e25657436e88a62624b3751a583dfe4e123",
+        "status": "Fixed",
+        "date": "2025-8-3",
+        "language": "C",
+        "Bug Num": 2,
+        "Agent": "patinf",
+        "bug_type": "Memory Leak",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://github.com/FFmpeg/FFmpeg/commit/008679ec162d1769afd706af5b1ce7a593f13f2b",
+        "status": "Fixed",
+        "date": "2025-8-3",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Memory Leak",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250803154143.28112-1-jiashengjiangcool@gmail.com/",
+        "status": "Pending",
+        "date": "2025-8-3",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Memory Leak",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250803002425.24534-1-jiashengjiangcool@gmail.com/",
+        "status": "Pending",
+        "date": "2025-8-3",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Missing Check Memory Leak",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://github.com/FFmpeg/FFmpeg/commit/9ca58424ded24e931fed329174c28244b67d5670",
+        "status": "Fixed",
+        "date": "2025-8-2",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Memory Leak",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250811211021.34174-1-jiashengjiangcool@gmail.com/",
+        "status": "Fixed",
+        "date": "2025-8-8",
+        "language": "C",
+        "Bug Num": 5,
+        "Agent": "patinf",
+        "bug_type": "Memory Leak",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250807190239.5740-1-jiashengjiangcool@gmail.com/",
+        "status": "Confirmed",
+        "date": "2025-8-7",
+        "language": "C",
+        "Bug Num": 2,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250806163947.35180-1-jiashengjiangcool@gmail.com/",
+        "status": "Confirmed",
+        "date": "2025-8-6",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250806150721.32330-1-jiashengjiangcool@gmail.com/",
+        "status": "Confirmed",
+        "date": "2025-8-6",
+        "language": "C",
+        "Bug Num": 3,
+        "Agent": "patinf",
+        "bug_type": "Missing Check",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250806145422.31198-1-jiashengjiangcool@gmail.com/",
+        "status": "Confirmed",
+        "date": "2025-8-6",
+        "language": "C",
+        "Bug Num": 2,
+        "Agent": "patinf",
+        "bug_type": "Missing Check Memory Leak",
+        "sort_weight": 0
+    },
+    {
+        "repo_name": "FFmpeg",
+        "patch/issue link": "https://patchwork.ffmpeg.org/project/ffmpeg/patch/20250805193115.14842-1-jiashengjiangcool@gmail.com/",
+        "status": "Confirmed",
+        "date": "2025-8-5",
+        "language": "C",
+        "Bug Num": 1,
+        "Agent": "patinf",
+        "bug_type": "Memory Leak",
         "sort_weight": 0
     },
     {
