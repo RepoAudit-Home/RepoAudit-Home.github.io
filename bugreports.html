@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="RepoAudit is an open-source tool for repository quality assessment and bug management.">
+  <meta name="keywords" content="RepoAudit, Repository Audit, Bug Report, Code Quality, Open Source">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RepoAudit</title>
+  <!-- Optional Google Analytics -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    /* Optional: reduce some whitespace for a more compact layout */
+    .hero .hero-body { padding: 2rem 1rem !important; }
+    .section { padding: 1.5rem 1rem !important; }
+    .container { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+    .box { padding: 1rem !important; margin-bottom: 1rem !important; }
+    .loading { text-align: center; font-size: 1.2em; margin-top: 20px; color: #555; }
+    
+    /* Table column width customization */
+    .table {
+      table-layout: fixed;
+    }
+    
+    .table th:nth-child(1), .table td:nth-child(1) { width: 8%; }   /* ID */
+    .table th:nth-child(2), .table td:nth-child(2) { width: 14%; }  /* Project */
+    .table th:nth-child(3), .table td:nth-child(3) { width: 8%; }   /* Lang */
+    .table th:nth-child(4), .table td:nth-child(4) { width: 16%; }  /* Bug Type */
+    .table th:nth-child(5), .table td:nth-child(5) { width: 8%; }   /* Link */
+    .table th:nth-child(6), .table td:nth-child(6) { width: 17%; }  /* Status */
+    .table th:nth-child(7), .table td:nth-child(7) { width: 5%; }   /* Num */
+    .table th:nth-child(8), .table td:nth-child(8) { width: 12%; }  /* Agent */
+    .table th:nth-child(9), .table td:nth-child(9) { width: 12%; }  /* Date */
+    
+    /* Ensure text doesn't overflow */
+    .table td {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    /* Responsive navbar burger for mobile devices */
+    @media screen and (max-width: 1023px) {
+      .navbar-menu { display: none; }
+      .navbar-menu.is-active { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar with additional links -->
+<!-- Navbar with additional links -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+      <a class="navbar-item" href="bugreports.html">Bug Reports</a>
+      <a class="navbar-item" href="documentation.html">Docs</a>
+      <a class="navbar-item" href="support.html">Support</a>
+      <a class="navbar-item" href="resources.html">Resources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Add this script block at the end of the document (before </body>) -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navbarBurgers = document.querySelectorAll('.navbar-burger');
+  navbarBurgers.forEach(el => {
+    el.addEventListener('click', () => {
+      const targetId = el.dataset.target;
+      const target = document.getElementById(targetId);
+      el.classList.toggle('is-active');
+      target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1">Bug Reports</h1>
+          <div class="is-size-5" style="margin-top: 1rem;">
+            The gallery of bugs discovered by RepoAudit
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Full Bug Report List Section -->
+<section class="section" id="bug-reports">
+  <div class="container is-max-widescreen">
+    <!-- Bug Count Display Panel -->
+    <div id="bug-count-panel" class="columns" style="margin-bottom: 1rem;">
+      <div class="column">
+        <div class="notification" style="background-color: #6f42c1; color: #ffffff;">
+          <strong>Fixed: <span id="fixed-count">0</span></strong>
+        </div>
+      </div>
+      <div class="column">
+        <div class="notification" style="background-color: #28a745; color: #ffffff;">
+          <strong>Confirmed: <span id="confirmed-count">0</span></strong>
+        </div>
+      </div>
+      <div class="column">
+        <div class="notification" style="background-color: #0366d6; color: #ffffff;">
+          <strong>Reproduced: <span id="reproduced-count">0</span></strong>
+        </div>
+      </div>
+      <div class="column">
+        <div class="notification" style="background-color: #ffd33d; color: #000000;">
+          <strong>Pending: <span id="pending-count">0</span></strong>
+        </div>
+      </div>
+    </div>
+    <div id="loading-message" class="loading">Loading bug reports...</div>
+    <table class="table is-striped is-hoverable is-fullwidth">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Project</th>
+          <th>Lang</th>
+          <th>Bug Type</th>
+          <th>Link</th>
+          <th>Status</th>
+          <th>Num</th>
+          <th>Agent</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="bug-report-table">
+        <!-- Data will be dynamically inserted here -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      Template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfiese</a> by Keunhong Park et al.
+    </div>
+  </div>
+</footer>
+
+<!-- Responsive Navbar Burger Toggle Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.getElementById(burger.dataset.target || "navMenu");
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
+  
+  // Function to load JSON data and populate the table and bug count panel
+  async function loadBugReports() {
+    try {
+      const response = await fetch("static/bug/BugReport.json");
+      const bugReports = await response.json();
+
+      // Sort bugReports by descending sort_weight and then descending date
+      bugReports.sort((a, b) => {
+        if (b.sort_weight !== a.sort_weight) {
+          return b.sort_weight - a.sort_weight;
+        }
+        return new Date(b.date) - new Date(a.date);
+      });
+
+      const tableBody = document.getElementById("bug-report-table");
+      const loadingMessage = document.getElementById("loading-message");
+      
+      // Compute counts by adding up "Bug Num" per status
+      const counts = {
+        "Fixed": 0,
+        "Confirmed": 0,
+        "Reproduced": 0,
+        "Reported": 0,
+        "Reported with PoC": 0
+      };
+      
+      bugReports.forEach(bug => {
+        if (counts.hasOwnProperty(bug.status)) {
+          counts[bug.status] += parseInt(bug["Bug Num"], 10);
+        }
+      });
+      
+      // Update the display panel with counts
+      document.getElementById("fixed-count").textContent = counts["Fixed"];
+      document.getElementById("confirmed-count").textContent = counts["Confirmed"];
+      document.getElementById("reproduced-count").textContent = counts["Reproduced"];
+      document.getElementById("pending-count").textContent = counts["Reported"] + counts["Reported with PoC"];
+      
+      // Remove loading message
+      loadingMessage.style.display = "none";
+      
+      // Populate table rows with bug reports
+      bugReports.forEach((bug, index) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${index + 1}</td>
+          <td>${bug.repo_name}</td>
+          <td>${bug.language}</td>
+          <td>${bug.bug_type}</td>
+          <td><a href="${bug["patch/issue link"]}" target="_blank">View</a></td>
+          <td>${bug.status}</td>
+          <td>${bug["Bug Num"]}</td>
+          <td>${bug["Agent"]}</td>
+          <td>${bug.date}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    } catch (error) {
+      console.error("Error loading bug reports:", error);
+      document.getElementById("loading-message").textContent = "Failed to load bug reports.";
+    }
+  }
+  
+  // Load bug reports when the DOM content is loaded
+  document.addEventListener("DOMContentLoaded", loadBugReports);
+</script>
+
+</body>
+</html>
