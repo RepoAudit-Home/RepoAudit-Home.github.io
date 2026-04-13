@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="RepoAudit is an open-source tool for repository quality assessment and bug management.">
+  <meta name="keywords" content="RepoAudit, Repository Audit, Bug Report, Code Quality, Open Source">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RepoAudit</title>
+  <!-- Optional Google Analytics -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    /* Optional: reduce some whitespace for a more compact layout */
+    .hero .hero-body { padding: 2rem 1rem !important; }
+    .section { padding: 1.5rem 1rem !important; }
+    .container { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+    .box { padding: 1rem !important; margin-bottom: 1rem !important; }
+    .loading { text-align: center; font-size: 1.2em; margin-top: 20px; color: #555; }
+    /* Reduce hero padding */
+    .hero .hero-body {
+      padding: 2rem 1rem !important;
+    }
+    /* Reduce section padding */
+    .section {
+      padding: 1.5rem 1rem !important;
+    }
+    /* Reduce container margins */
+    .container {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    /* Tighter box spacing */
+    .box {
+      padding: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+    /* Adjust columns spacing */
+    .columns {
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
+    }
+    .column {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    /* Reduce navbar and footer padding if needed */
+    .navbar, .footer {
+      padding: 0.5rem 1rem !important;
+    }
+    /* Navbar burger adjustments for mobile */
+    @media screen and (max-width: 1023px) {
+      .navbar-menu { display: none; }
+      .navbar-menu.is-active { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar with additional links -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+      <a class="navbar-item" href="bugreports.html">Bug Reports</a>
+      <a class="navbar-item" href="documentation.html">Docs</a>
+      <a class="navbar-item" href="support.html">Support</a>
+      <a class="navbar-item" href="resources.html">Resources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Add this script block at the end of the document (before </body>) -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navbarBurgers = document.querySelectorAll('.navbar-burger');
+  navbarBurgers.forEach(el => {
+    el.addEventListener('click', () => {
+      const targetId = el.dataset.target;
+      const target = document.getElementById(targetId);
+      el.classList.toggle('is-active');
+      target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+  
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1">Resources</h1>
+          <div class="is-size-5" style="margin-top: 1rem;">
+            Interested in AI code auditing? Check out our resources below.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container is-max-widescreen">
+    <div class="box">
+      <p>
+        We have published a series of LLM-based static analysis works that form the cornerstone of RepoAudit. Meanwhile, we continuously collect and categorize the latest research. The research projects and paper list below are provided for reference to researchers and practitioners in the field.
+      </p>
+    </div>
+    <div class="columns is-multiline is-centered">
+      <div class="column is-12">
+        <br>
+      </div>
+      
+      <!-- Resource Card 6: CodeLLMPaper -->
+      <div class="column is-12">
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-128x128">
+              <a href="https://github.com/PurCL/CodeLLMPaper" target="_blank">
+                <img src="./static/images/paperlist.jpg" alt="Paper List">
+              </a>
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong><a href="https://github.com/PurCL/CodeLLMPaper" target="_blank">
+                  CodeLLMPaper: A Continuously Updated Collection of CodeLLM Papers</a></strong>
+                <a href="https://github.com/PurCL/CodeLLMPaper" target="_blank">
+                  <img src="https://img.shields.io/github/stars/PurCL/CodeLLMPaper" width="100" height="20" alt="GitHub Stars"/>
+                </a><br>
+                <p>CodeLLMPaper is a curated collection of the latest research on LLM-for-Code published in top-tier venues in software engineering, programming languages, security, NLP, and machine learning. The collected research works cover diverse coding
+                tasks, foundational principles of code models, empirical studies, and surveys.</p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Resource Card 5: BugScope -->
+      <div class="column is-12">
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-128x128">
+              <a href="https://arxiv.org/abs/2507.15671" target="_blank">
+                <img src="./static/images/BugScope.png" alt="BugScope Logo">
+              </a>
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong><a href="https://arxiv.org/abs/2507.15671" target="_blank">
+                  BugScope: Learn to Find Bugs Like Human</a></strong>
+                <p>BugScope is an intelligent bug detection agent that learns to identify diverse bugs from examples. It outperforms existing industrial tools like Cursor BugBot and CodeRabbit, detecting twice as many bugs while maintaining high precision.</p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Resource Card 4: RFCScan -->
+      <div class="column is-12">
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-128x128">
+              <a href="https://arxiv.org/pdf/2506.00714" target="_blank">
+                <img src="./static/images/RFCScan.png" alt="RFCScan Logo">
+              </a>
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong><a href="https://arxiv.org/pdf/2506.00714" target="_blank">
+                  An LLM Agent for Functional Bug Detection in Network Protocols</a></strong>
+                <a href="https://github.com/zmw12306/RFCScan" target="_blank">
+
+                  
+                  <img src="https://img.shields.io/github/stars/zmw12306/RFCScan" width="100" height="20" alt="GitHub Stars"/>
+                </a><br>
+                <p>An LLM agent for statically detecting functional bugs in network protocol implementations against the natural language specifications in the RFC documents</p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Resource Card 3: ParCleanse -->
+      <div class="column is-12">
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-128x128">
+              <a href="https://arxiv.org/pdf/2504.18050" target="_blank">
+                <img src="./static/images/ParCleanse.png" alt="ParCleanse Logo">
+              </a>
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>
+                  <a href="https://arxiv.org/pdf/2504.18050" target="_blank">
+                    Validating Network Protocol Parsers with Traceable RFC Document Interpretation
+                  </a>
+                </strong>
+                <a href="https://github.com/zmw12306/ParCleanse/tree/main" target="_blank">
+                  <img src="https://img.shields.io/github/stars/zmw12306/ParCleanse" width="100" height="20" alt="GitHub Stars"/>
+                </a><br>
+                ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2025)<br>
+                <p>
+                  An LLM-driven test case generation technique that uncovers the inconsistencies between network protocol parsers and the packet format specifications in RFC documents.
+                </p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Resource Card 2: LLMDFA -->
+      <div class="column is-12">
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-128x128">
+              <a href="https://neurips.cc/virtual/2024/poster/95227" target="_blank">
+                <img src="./static/images/LLMDFA.jpg" alt="LLMDFA Logo">
+              </a>
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong><a href="https://neurips.cc/virtual/2024/poster/95227" target="_blank">
+                  LLMDFA: Analyzing Dataflow in Code with Large Language Models</a></strong>
+                <a href="https://github.com/chengpeng-wang/LLMDFA" target="_blank">
+                  <img src="https://img.shields.io/github/stars/chengpeng-wang/LLMDFA" width="100" height="20" alt="GitHub Stars"/>
+                </a><br>
+                The Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024)<br>
+                <p>An LLM-powered summary-based data-flow analysis framework, achieving comparable and even superior precision and recall to state-of-the-art symbolic static analysis tools.</p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Resource Card 1: LLMSAN -->
+      <div class="column is-12">
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-128x128">
+              <a href="https://aclanthology.org/2024.findings-emnlp.217/" target="_blank">
+                <img src="./static/images/LLMSAN.jpg" alt="LLMSAN Logo">
+              </a>
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong><a href="https://aclanthology.org/2024.findings-emnlp.217/" target="_blank">
+                  LLMSAN: Sanitizing Large Language Models in Bug Detection with Data-Flow</a></strong>
+                <a href="https://github.com/chengpeng-wang/LLMSAN" target="_blank">
+                  <img src="https://img.shields.io/github/stars/chengpeng-wang/LLMSAN" width="100" height="20" alt="GitHub Stars"/>
+                </a><br>
+                The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP Findings 2024)<br>
+                <p>A sanitization technique that mitigates LLM hallucinations in bug detection, validating data-flow paths as verifiable chain-of-thoughts via divide-and-conquer.</p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <br><br>
+    <div class="content has-text-centered">
+      Template adapted from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfiese</a> by Keunhong Park et al.
+    </div>
+    <br><br>
+  </div>
+</footer>
+
+<!-- Navbar burger toggle script for mobile devices -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.getElementById(burger.dataset.target || "navMenu");
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
+</script>
+</body>
+</html>

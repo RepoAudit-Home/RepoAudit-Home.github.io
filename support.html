@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="RepoAudit is an open-source tool for repository quality assessment and bug management.">
+  <meta name="keywords" content="RepoAudit, Repository Audit, Bug Report, Code Quality, Open Source">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RepoAudit</title>
+  <!-- Optional Google Analytics -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    /* Responsive adjustments */
+    .hero .hero-body { padding: 2rem 1rem !important; }
+    .section { padding: 1.5rem 1rem !important; }
+    .container { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+    .box { padding: 1rem !important; margin-bottom: 1rem !important; }
+    .loading { text-align: center; font-size: 1.2em; margin-top: 20px; color: #555; }
+    /* Navbar burger adjustments for mobile */
+    @media screen and (max-width: 1023px) {
+      .navbar-menu { display: none; }
+      .navbar-menu.is-active { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar with additional links -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+      <a class="navbar-item" href="bugreports.html">Bug Reports</a>
+      <a class="navbar-item" href="documentation.html">Docs</a>
+      <a class="navbar-item" href="support.html">Support</a>
+      <a class="navbar-item" href="resources.html">Resources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Add this script block at the end of the document (before </body>) -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const navbarBurgers = document.querySelectorAll('.navbar-burger');
+  navbarBurgers.forEach(el => {
+    el.addEventListener('click', () => {
+      const targetId = el.dataset.target;
+      const target = document.getElementById(targetId);
+      el.classList.toggle('is-active');
+      target.classList.toggle('is-active');
+    });
+  });
+});
+</script>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1">Support for RepoAudit</h1>
+          <div class="is-size-5" style="margin-top: 1rem;">
+            Need help with RepoAudit? Find answers, report issues, and join our community.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Support Content Section -->
+<section class="section" id="support-content">
+  <div class="container is-max-widescreen">
+    <!-- Need Help? -->
+    <div class="box">
+      <h2 class="title is-3">Need help?</h2>
+      <dl class="content" style="margin-top: 1rem;">
+        <dt class="is-size-5" style="margin-top: 0.5rem;"><strong>GitHub Issues:</strong></dt>
+        <dd class="is-size-6" style="margin-left: 1rem;">
+          Submit a detailed bug report or question on our <a href="https://github.com/PurCL/RepoAudit/issues" target="_blank">GitHub repository</a>.
+        </dd>
+        <dt class="is-size-5" style="margin-top: 1rem;"><strong>Updates:</strong></dt>
+        <dd class="is-size-6" style="margin-left: 1rem;">
+          Stay informed about the latest RepoAudit features and releases by checking our <a href="index.html#news" target="_blank">releases page</a>.
+        </dd>
+      </dl>
+    </div>
+    <!-- Troubleshooting -->
+    <div class="box">
+      <h2 class="title is-3">Troubleshooting</h2>
+      <p>
+        Do you have trouble analyzing your project or encountering errors? Please check out the following list for common issues and solutions.
+        If the problem persists, feel free to open an issue on GitHub. We will continuously update this list based on your reported issues.
+      </p>
+      <br>
+      <div class="content">
+        <h3 class="title is-4">An Error in tree-sitter Installation</h3>
+        <p>After executing <code>cd lib && python build.py</code>, you might encounter the following error message:</p>
+        <pre><code>/Users/guest/Code/RepoAudit/lib/vendor/tree-sitter-cpp/src/scanner.c:126:5: error: call to undeclared function 'static_assert'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    static_assert(MAX_DELIMITER_LENGTH * sizeof(wchar_t) < TREE_SITTER_SERIALIZATION_BUFFER_SIZE,
+    ^
+1 error generated.
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/distutils/unixccompiler.py", line 118, in _compile
+    self.spawn(compiler_so + cc_args + [src, '-o', obj] +
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/distutils/ccompiler.py", line 910, in spawn
+    spawn(cmd, dry_run=self.dry_run)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/distutils/spawn.py", line 91, in spawn
+    raise DistutilsExecError(
+distutils.errors.DistutilsExecError: command '/usr/bin/cc' failed with exit code 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/guest/Code/RepoAudit/lib/build.py", line 34, in <module>
+    Language.build_library(
+  File "/Users/guest/Library/Python/3.9/lib/python/site-packages/tree_sitter/__init__.py", line 85, in build_library
+    compiler.compile(
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/distutils/ccompiler.py", line 574, in compile
+    self._compile(obj, src, ext, cc_args, extra_postargs, pp_opts)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/distutils/unixccompiler.py", line 121, in _compile
+    raise CompileError(msg)
+distutils.errors.CompileError: command '/usr/bin/cc' failed with exit code 1</code></pre>
+        <p><strong>Solution</strong>: Open the file <code>/Users/guest/Code/RepoAudit/lib/vendor/tree-sitter-cpp/src/scanner.c</code> and comment the <code>static_assert</code> statement in the following function:</p>
+        <pre><code>unsigned tree_sitter_cpp_external_scanner_serialize(void *payload, char *buffer) {
+    // static_assert(MAX_DELIMITER_LENGTH * sizeof(wchar_t) < TREE_SITTER_SERIALIZATION_BUFFER_SIZE,
+    //              "Serialized delimiter is too long!");
+
+    Scanner *scanner = (Scanner *)payload;
+    size_t size = scanner->delimiter_length * sizeof(wchar_t);
+    memcpy(buffer, scanner->delimiter, size);
+    return (unsigned)size;
+}</code></pre>
+        <p>Then you can execute <code>cd lib && python build.py</code> again for installation.</p>
+      </div>
+    </div>
+    <!-- FAQ Section -->
+    <div class="box">
+      <h2 class="title is-3">FAQ</h2>
+      <div class="faq-item">
+        <div class="faq-question" style="cursor: pointer; font-weight: bold; padding: 0.5rem; border-bottom: 1px solid #ddd;">
+          <span class="faq-number">1.</span>
+          <span class="faq-logo" style="margin-right: 0.5rem;">
+            <i class="fas fa-question-circle"></i>
+          </span>
+          Is RepoAudit platform independent?
+        </div>
+        <div class="faq-answer is-hidden" style="padding: 0.5rem;">
+          <p>Yes. RepoAudit can be deployed on Windows, macOS, and Linux.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" style="cursor: pointer; font-weight: bold; padding: 0.5rem; border-bottom: 1px solid #ddd;">
+          <span class="faq-number">2.</span>
+          <span class="faq-logo" style="margin-right: 0.5rem;">
+            <i class="fas fa-question-circle"></i>
+          </span>
+          Does RepoAudit support cross-language analysis?
+        </div>
+        <div class="faq-answer is-hidden" style="padding: 0.5rem;">
+          <p>No. Although RepoAudit has multi-lingual support, it can only analyze the programs developed in single programming languages. We will add cross-language analysis support in the future.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" style="cursor: pointer; font-weight: bold; padding: 0.5rem; border-bottom: 1px solid #ddd;">
+          <span class="faq-number">3.</span>
+          <span class="faq-logo" style="margin-right: 0.5rem;">
+            <i class="fas fa-question-circle"></i>
+          </span>
+          Does the choice of LLM significantly affect the performance of RepoAudit?
+        </div>
+        <div class="faq-answer is-hidden" style="padding: 0.5rem;">
+          <p>To some extent, yes. We recommend using GPT-4, Claude-3.5 Sonnet, or DeepSeek-V3 as driving models for RepoAudit. Using o3-mini, Claude 3.7, or DeepSeek-R1 can yield even better results.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" style="cursor: pointer; font-weight: bold; padding: 0.5rem; border-bottom: 1px solid #ddd;">
+          <span class="faq-number">4.</span>
+          <span class="faq-logo" style="margin-right: 0.5rem;">
+            <i class="fas fa-question-circle"></i>
+          </span>
+          I am a serious programming language researcher. I wonder whether RepoAudit has any soundness guarantee, i.e., can theoretically detect all underlying bugs in the program.
+        </div>
+        <div class="faq-answer is-hidden" style="padding: 0.5rem;">
+          <p>No. We don’t expect RepoAudit to detect all the bugs – that would be impossible. Even the so-called "sound" symbolic static analysis tools eventually compromise on full soundness in practice. For example, RepoAudit has discovered many bugs that even Meta Infer fails to detect.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(q => {
+          q.addEventListener('click', () => {
+            q.nextElementSibling.classList.toggle('is-hidden');
+          });
+        });
+      });
+    </script>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      Template adapted from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfiese</a> by Keunhong Park et al.
+    </div>
+  </div>
+</footer>
+
+<!-- Navbar burger toggle script for mobile devices -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.getElementById(burger.dataset.target || "navMenu");
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
+</script>
+</body>
+</html>
